@@ -23,6 +23,29 @@
 		}
 	};
 
+	document.addEventListener('DOMContentLoaded', function () {
+		const darkModeButton = document.getElementById('darkModeButton');
+		const darkModeIcon = document.getElementById('darkModeIcon');
+		const body = document.body;
+	
+		darkModeButton.addEventListener('click', function () {
+			body.classList.toggle('dark-mode');
+	
+			// Cambiar el color de fondo y el color del texto del cuerpo al presionar el botón
+			if (body.classList.contains('dark-mode')) {
+				body.style.backgroundColor = '#333'; // Color de fondo en modo oscuro
+				body.style.color = '#fff'; // Color del texto en modo oscuro
+				darkModeIcon.classList.remove('fa-moon');
+				darkModeIcon.classList.add('fa-sun');
+			} else {
+				body.style.backgroundColor = '#fff'; // Color de fondo en modo claro
+				body.style.color = '#4d4d4d'; // Color del texto en modo claro
+				darkModeIcon.classList.remove('fa-sun');
+				darkModeIcon.classList.add('fa-moon');
+			}
+		});
+	});
+	
 	
 	var fullHeight = function() {
 

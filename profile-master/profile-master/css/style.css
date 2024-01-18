@@ -305,6 +305,21 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 3em 0;
   }
 }
+.dark-mode-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #333; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color de texto en modo oscuro */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode-button:hover {
+    background-color: #555; /* Color de fondo en modo oscuro al pasar el mouse */
+}
 
 #fh5co-started {
   border-bottom: none;
@@ -312,7 +327,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #FF9000;
+  background: #134c78e6;
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
